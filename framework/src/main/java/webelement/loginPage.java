@@ -1,5 +1,22 @@
 package webelement;
 
-public class loginPage {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+public class loginPage {
+    WebDriver driver;
+	public loginPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(name="username")
+	WebElement user;
+	
+	@FindBy(name="password")
+	WebElement pwd;
+	
+	@FindBy(className="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button")
+	WebElement submit;
 }
