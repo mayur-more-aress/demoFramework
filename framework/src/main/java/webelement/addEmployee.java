@@ -41,8 +41,8 @@ public class addEmployee {
 		firstname.sendKeys(fname);
 	}
 	
-	public void add() {
-		String pull = "testdemo";
+	public void delete() {
+		String pull = "test";
 	}
 	public void middlename(String mname) {
 		middlename.sendKeys(mname);
