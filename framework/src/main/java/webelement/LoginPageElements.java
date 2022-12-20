@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoginPageElements {
+public class LoginPageElements extends InitialStep {
 	
 	 WebDriver driver;
 	 
@@ -40,7 +40,44 @@ public class LoginPageElements {
 		 WebElement selectAdmin;
 	  
 	 
-}
+	 
+	 public LoginPageElements(WebDriver d) {
+		 driver=d;
+		 PageFactory.initElements(d, this);
+	}
+
+
+	 public void usernameValue(String uname)
+	 {
+		 username.sendKeys(uname);
+	 }
+	 
+	 public void passwordValue(String pass)
+	 {
+		 password.sendKeys(pass);
+	 }
+	 public void loginFun()
+	 {
+		 login.click();
+	 }
+	 public void adminClick(){
+		  admin.click();
+	 }
+	 public void systemUserSet(String ename) {
+		 systemusers.sendKeys(ename);
+	 }
+	 public void selectDropDown() {
+		 selectdropdown.click();
+	 }
+	 public void adminDropdown(){
+		 selectAdmin.click();
+	 }
+	public void select(){
+		 
+		 WebElement we=driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div/div[1]"));
+		we.click();
+		  
+	}}
 	 
 		
 	
