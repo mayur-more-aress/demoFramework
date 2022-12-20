@@ -3,21 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
+
       <class name="testCases.Tc1_AddLeave">
         <methods>
           <include name="loginFn"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.Tc1_AddLeave -->
-=======
+
       <class name="TestCases.TC_addEmployee">
         <methods>
           <include name="setup"/>
           <include name="login"/>
         </methods>
       </class> <!-- TestCases.TC_addEmployee -->
->>>>>>> 46812a2291d002cefc2937169cb6914d2a6941c1
+
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

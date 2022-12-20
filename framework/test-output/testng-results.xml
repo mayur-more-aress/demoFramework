@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
+
   <suite started-at="2022-12-19T19:08:57 IST" name="Default suite" finished-at="2022-12-19T19:08:57 IST" duration-ms="36">
     <groups>
     </groups>
@@ -13,7 +13,7 @@
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method signature="loginFn()[pri:0, instance:testCases.Tc1_AddLeave@27f981c6]" started-at="2022-12-19T19:08:57 IST" name="loginFn" finished-at="2022-12-19T19:08:57 IST" duration-ms="4" status="FAIL">
-=======
+
   <suite started-at="2022-12-20T10:20:12 IST" name="Default suite" finished-at="2022-12-20T10:20:12 IST" duration-ms="30">
     <groups>
     </groups>
@@ -24,7 +24,7 @@
           </reporter-output>
         </test-method> <!-- setup -->
         <test-method signature="login()[pri:0, instance:TestCases.TC_addEmployee@27f981c6]" started-at="2022-12-20T10:20:12 IST" name="login" finished-at="2022-12-20T10:20:12 IST" duration-ms="4" status="FAIL">
->>>>>>> 46812a2291d002cefc2937169cb6914d2a6941c1
+
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
@@ -37,10 +37,10 @@ at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
 <<<<<<< HEAD
 at webelement.loginPage.userName(loginPage.java:33)
 at testCases.Tc1_AddLeave.loginFn(Tc1_AddLeave.java:31)
-=======
+
 at webelement.loginPage.username(loginPage.java:34)
 at TestCases.TC_addEmployee.login(TC_addEmployee.java:28)
->>>>>>> 46812a2291d002cefc2937169cb6914d2a6941c1
+
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,13 +74,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
+
         </test-method> <!-- loginFn -->
       </class> <!-- testCases.Tc1_AddLeave -->
-=======
+
         </test-method> <!-- login -->
       </class> <!-- TestCases.TC_addEmployee -->
->>>>>>> 46812a2291d002cefc2937169cb6914d2a6941c1
+
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
