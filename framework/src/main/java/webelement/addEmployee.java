@@ -42,7 +42,9 @@ public class addEmployee {
 	}
 	
 	public void add() {
-		String pull = "testdemo";
+		
+		
+		String test = "Test";
 	}
 	public void middlename(String mname) {
 		middlename.sendKeys(mname);
