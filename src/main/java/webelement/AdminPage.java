@@ -18,6 +18,7 @@ public class AdminPage {
 	
 	@FindBy(xpath = "//span[text()='Admin']")
 	WebElement adminModule;
+
 	
 	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
 	WebElement systemUser;

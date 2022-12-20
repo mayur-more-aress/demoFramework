@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+/.metadata/
+/target/
+/.classpath/
+/test-output/
+/.project/
+
+=======
 /target/
 /test-output/
+<<<<<<< HEAD
+/.classpath/
 /src/main/java/webelement/addEmployee.java/
+>>>>>>> 8af2063d61554a947e97bf0a893d4c545971d108
+=======
+/src/main/java/webelement/addEmployee.java/
+>>>>>>> d1b515e8a4093c5928393d70704d66b4d19e8c79
