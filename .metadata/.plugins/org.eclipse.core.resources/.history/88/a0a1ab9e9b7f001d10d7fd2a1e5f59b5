@@ -1,0 +1,40 @@
+package webelement;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class loginPage {
+
+	   WebDriver driver;
+
+	   @FindBy(xpath = "//input[@name='username']")
+	   WebElement username;
+
+	   @FindBy(xpath = "//input[@name='password']")
+	   WebElement password;
+
+	   @FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
+	   WebElement login;
+
+	   @FindBy(xpath="/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span")
+	      WebElement admin;
+	 //
+	 //  @FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/div/div/i")
+	 //  WebElement xpath1;
+	 //
+	 //  @FindBy(className = "oxd-textarea oxd-textarea--active oxd-textarea--resize-vertical")
+	 //  WebElement className3;
+	 //
+	 //  @FindBy(className = "oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space")
+	 //  WebElement className4;
+	   public loginPage(WebDriver d) {
+	    driver=d;
+	    PageFactory.initElements(d, this);
+	  }
+	  
+	  
+}
+
+

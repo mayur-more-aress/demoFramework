@@ -1,0 +1,53 @@
+package webelement;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+public class LeaveApply 
+{
+	
+ WebDriver driver;
+ 
+ @FindBy(linkText ="Apply")
+ WebElement linktext;
+ 
+ @FindBy(className = "oxd-icon bi-caret-down-fill oxd-select-text--arrow")
+ WebElement arrow;
+ 
+ @FindBy(className = "oxd-select-text oxd-select-text--active")
+ WebElement selectedtext;
+ 
+ @FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/div/div/i")
+ WebElement xpath;
+ 
+ @FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/div/div/i")
+ WebElement xpath1;
+ 
+ @FindBy(className = "oxd-textarea oxd-textarea--active oxd-textarea--resize-vertical")
+ WebElement className3;
+ 
+ @FindBy(className = "oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space")
+ WebElement className4;
+ 
+ 
+ 
+ public void apply()
+ {
+	 linktext.click();
+ }
+ 
+ public void leaveType()
+ {
+	 Select s = new Select(arrow);
+	 s.selectByVisibleText("CAN - Bereavement");
+ }
+ 
+ 
+ 
+ 
+ 
+	
+
+}

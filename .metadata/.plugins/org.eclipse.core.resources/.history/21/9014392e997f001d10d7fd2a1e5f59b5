@@ -1,0 +1,68 @@
+package webelement;
+
+public class loginPage {
+	
+	
+	import java.io.File;
+	import java.io.IOException;
+	import org.apache.commons.io.FileUtils;
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.TakesScreenshot;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.chrome.ChromeDriver;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
+
+	import io.github.bonigarcia.wdm.WebDriverManager;
+
+	public class Calender {
+	 static WebDriver driver;
+
+	 public static void datepicker(String exDay, String exMonth, String exYear) {
+	  int currentYear = 2022;
+	  driver.findElement(By.id("datepicker")).click();
+	  WebDriverWait web = new WebDriverWait(driver, 5);
+	  web.until(ExpectedConditions.visibilityOfElementLocated(By.className("ui-datepicker-calendar")));
+	  String monthYearVal = driver.findElement(By.className("ui-datepicker-title")).getText();
+	  System.out.println(monthYearVal);
+	//  String month = monthYearVal.split(" ")[0].trim();
+	//  String year = monthYearVal.split(" ")[1].trim();
+	  while (!(monthYearVal.split(" ")[0].equals(exMonth) && monthYearVal.split(" ")[1].equals(exYear))) {
+	   if (Integer.parseInt(exYear) >= currentYear) {
+	    driver.findElement(By.xpath("//a[@title='Next']")).click();
+	   } else {
+	    driver.findElement(By.xpath("//a[@title='Prev']")).click();
+	   }
+	   monthYearVal = driver.findElement(By.className("ui-datepicker-title")).getText();
+	   System.out.println(monthYearVal);
+	//   month = monthYearVal.split(" ")[0].trim();
+	//   year = monthYearVal.split(" ")[1].trim();
+	   monthYearVal = driver.findElement(By.className("ui-datepicker-title")).getText();
+	  }
+
+	  try {
+	   driver.findElement(By.xpath("//a[text()=" + exDay + "]")).click();
+	  } catch (Exception e) {
+	   System.out.println("Invalid date - " + exDay + " " + exMonth);
+
+	  }
+
+	 }
+	// public static String[] splitValue(String value) {
+	//  return value.split(" ");
+	// }
+
+	 public static void main(String[] args) throws IOException {
+	  WebDriverManager.chromedriver().setup();
+	  System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+	  driver = new ChromeDriver();
+	  driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
+	  datepicker("30", "December", "2022");
+
+	   File f = ((TakesScreenshot) driver).getScreenshotAs(org.openqa.selenium.OutputType.FILE);
+	      FileUtils.copyFile(f, new File("C:\\Users\\kaiwalya.vaidya\\Desktop/screenshot01.tiff"));  
+
+	 }
+
+	}
+}

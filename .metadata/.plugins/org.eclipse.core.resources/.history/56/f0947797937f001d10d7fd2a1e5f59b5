@@ -1,0 +1,74 @@
+package webelement;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class LeaveApply 
+{
+	
+ WebDriver driver;
+ 
+@FindBy(xpath="//input[@name='username']")
+WebElement username;
+
+@FindBy(xpath="//input[@name='username']")
+WebElement password;
+
+@FindBy(xpath="//button[@type='submit']")
+WebElement btn;
+
+
+ 
+ @FindBy(linkText ="Apply")
+ WebElement linktext;
+ 
+ @FindBy(className = "oxd-icon bi-caret-down-fill oxd-select-text--arrow")
+ WebElement arrow;
+ 
+ @FindBy(className = "oxd-select-text oxd-select-text--active")
+ WebElement selectedtext;
+ 
+ @FindBy(xpath="(//i[@class='oxd-icon bi-calendar oxd-date-input-icon'])[1]")
+ WebElement toDate;
+ 
+ @FindBy(xpath="(//i[@class='oxd-icon bi-calendar oxd-date-input-icon'])[2]")
+ WebElement fromDate;
+ 
+ @FindBy(className = "oxd-textarea oxd-textarea--active oxd-textarea--resize-vertical")
+ WebElement comment;
+ 
+ @FindBy(className = "oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space")
+ WebElement button;
+ 
+ 
+ @Test
+ public void login()
+ {
+	 username.sendKeys("admin");
+	 password.sendKeys("admin123");
+	 button.click();
+ }
+ 
+ 
+ 
+// @Test
+// public void apply()
+// {
+//	 linktext.click();
+// }
+// 
+//@Test
+// public void leaveType()
+// {
+//	 Select s = new Select(arrow);
+//	 s.selectByVisibleText("CAN - Bereavement");
+//	 
+// }
+// 
+	
+
+}
