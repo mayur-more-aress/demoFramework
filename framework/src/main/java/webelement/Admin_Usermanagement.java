@@ -25,7 +25,9 @@ public class Admin_Usermanagement {
 	@FindBy(xpath="//*[@id='app']/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div")
 	WebElement UserRole;
 	
-	@FindBy(xpath="//input[@placeholder='Type for hints...']") WebElement EmployeeName;
+	@FindBy(xpath="//input[@placeholder='Type for hints...']") 
+	WebElement EmployeeName;
 	
-	@FindBy(xpath="//*[@id='app']/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div") WebElement selectstatus;
+	@FindBy(xpath="//*[@id='app']/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div") 
+	WebElement selectstatus;
 }
