@@ -1,4 +1,10 @@
 /target/
+<<<<<<< HEAD
 /.classpath/
 /test-output/
 /.project/
+=======
+/test-output/
+/.classpath/
+/src/main/java/webelement/addEmployee.java/
+>>>>>>> 8af2063d61554a947e97bf0a893d4c545971d108

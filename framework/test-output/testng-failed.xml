@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="webelement.LoginOrangeHRM">
         <methods>
           <include name="setup"/>
@@ -13,6 +14,14 @@
           <include name="waitForPage"/>
         </methods>
       </class> <!-- webelement.LoginOrangeHRM -->
+=======
+      <class name="TestCases.TC_addEmployee">
+        <methods>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestCases.TC_addEmployee -->
+>>>>>>> 8af2063d61554a947e97bf0a893d4c545971d108
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
