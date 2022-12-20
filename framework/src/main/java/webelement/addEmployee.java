@@ -41,6 +41,9 @@ public class addEmployee {
 		firstname.sendKeys(fname);
 	}
 	
+	public void add() {
+		
+	}
 	public void middlename(String mname) {
 		middlename.sendKeys(mname);
 	}
