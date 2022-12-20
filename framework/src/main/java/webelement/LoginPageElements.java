@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoginPageElements  {
+public class LoginPageElements {
 	
 	 WebDriver driver;
 	 
@@ -40,6 +40,8 @@ public class LoginPageElements  {
 		 WebElement selectAdmin;
 	  
 	 
-	 
 }
+	 
+		
+	
 
